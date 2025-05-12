@@ -30,15 +30,15 @@ load_cache and save_cache functions store game information in a JSON cache file 
 b. Steam API Integration
 Retrieves the most recently played games of a user via the Steam API using their Steam ID.
 
-recommend_by_recently_played function returns the AppIDs of the user's recently played games.
+'son_oynanan_oyuna_oneri' function returns the AppIDs of the user's recently played games.
 
 c. Game Data Retrieval
-fetch_game_info function extracts a game’s description from the Steam store and cleans it of HTML tags.
+'bilgi_cek' function extracts a game’s description from the Steam store and cleans it of HTML tags.
 
 This data is used to compute similarities between games.
 
 d. Similarity Calculation with TF-IDF
-recommend_similar_games function calculates similarity scores between a specified game and others using TF-IDF vectorization and cosine similarity.
+'onerilen_oyun_mantigi' function calculates similarity scores between a specified game and others using TF-IDF vectorization and cosine similarity.
 
 e. User Feedback
 Users can mark recommended games as "Liked" or "Disliked."
@@ -46,7 +46,7 @@ Users can mark recommended games as "Liked" or "Disliked."
 Feedback is stored in a CSV file and influences future recommendation scores.
 
 f. Price-Performance Recommendation
-recommend_best_value_game function fetches game price data from SteamDB to analyze price-performance.
+'onerilen_fiyat_performans_mantigi' function fetches game price data from SteamDB to analyze price-performance.
 
 Recommends the best value-for-money game to the user.
 
